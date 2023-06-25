@@ -47,6 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($conn->query($sql) === TRUE) {
             echo "El registro se ha insertado correctamente.";
+            
             // Redireccionar al mismo archivo para evitar el reenvío del formulario
             header("Location: ".$_SERVER['PHP_SELF']);
             exit();
